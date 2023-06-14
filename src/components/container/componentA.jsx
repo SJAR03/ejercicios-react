@@ -1,5 +1,5 @@
 import React from 'react'
-import ComponentB from '../pure/componentB'
+import ComponentB from './componentB'
 import { Contact } from '../../models/contact.class'
 
 const ComponentA = () => {
