@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Exercises 1, 2, and 3: PropTypes and useState
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Exercise Explanation and Requirements:**
 
-## Available Scripts
+In this first React programming challenge, we will put into practice what we have learned so far by creating two components: Component A and Component B.
 
-In the project directory, you can run:
+#### Component A
 
-### `npm start`
+Component A represents a Contact and has the following features:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Name**: A string representing the contact's name.
+- **Last Name**: A string representing the contact's last name.
+- **Email**: A string representing the contact's email.
+- **Connected**: A boolean indicating whether the contact is connected or not.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Component B
 
-### `npm test`
+On the other hand, we have Component B, which receives a contact as a prop and can toggle its connected state between connected and disconnected.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- If the contact is connected, it should display: "Contact Online".
+- If the contact is disconnected, it should display: "Contact Unavailable".
 
-### `npm run build`
+#### Rendering Components in the Solution
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Component A should be rendered inside the `App.js` component of the project.
+- Component B should be rendered from Component A and receive props correctly.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Remember to use PropTypes properly to validate the types of props received by the components.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Exercise Screenshot:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Exercise 1 Solution](readme-assets/img/Exercise-1-2-3.png)
+_Code can be found in the repository, in its respective folder or branch_
