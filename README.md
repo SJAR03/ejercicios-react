@@ -2,11 +2,11 @@
 
 In this repository, I upload the solutions to the exercises proposed by the OpenBootCamp React course. Additionally, I include exercise descriptions and screenshots of the solutions.
 
-<div style="text-align: center;">
+<p align="center">
   <img src="readme-assets/gif/react.gif" alt="Repository GIF" width="300" height="300">
-</div>
+</p>
 
-# Table of Contents
+## Table of Contents
 
 - [Exercises 1, 2, and 3: PropTypes and useState](#exercises-1-2-and-3-proptypes-and-usestate)
 - [Exercises 4, 5, and 6: Converting Class Component to Functional Component](#exercises-4-5-and-6-converting-class-component-to-functional-component)
@@ -45,6 +45,7 @@ Remember to use PropTypes properly to validate the types of props received by th
 ### Exercise Screenshot:
 
 ![Exercise 1 Solution](readme-assets/img/Exercise-1-2-3.png)
+
 _Code can be found in the repository, in its respective folder or branch or click here: [Solution](https://github.com/SJAR03/ejercicios-react/tree/main/src/Exercise-1-2-3)._
 
 ## Exercises 4, 5, and 6: Converting Class Component to Functional Component
