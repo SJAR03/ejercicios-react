@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+## Exercises 7, 8, and 9: Contact List in React JS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Exercise Description and Requirements:**
 
-## Available Scripts
+In this React JS exercise, you are asked to create a contact list with the following functionalities:
 
-In the project directory, you can run:
+##### Display Contact
 
-### `npm start`
+The list should display existing contacts, including their information such as name, last name, email, and connection status.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##### Create Contact
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You should implement the functionality to add new contacts to the list. Each contact should have a name, last name, email, and initial connection status.
 
-### `npm test`
+##### Delete Contact
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+There should be an option to delete existing contacts from the list. When a contact is deleted, it should disappear from the view.
 
-### `npm run build`
+##### Change Contact Status
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Each contact should have a connection status that can be changed between "Connected" and "Disconnected". There should be a way to change this status for each contact individually.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Exercise Screenshot:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Exercise 3 Solution](readme-assets/img/Exercise-7-8-9.png)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+_The code can be found in the repository, in its respective folder or branch._
