@@ -1,70 +1,146 @@
-# Getting Started with Create React App
+# Proposed exercises repository for OpenBootCamp React Course
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this repository, I upload the solutions to the exercises proposed by the OpenBootCamp React course. Additionally, I include exercise descriptions and screenshots of the solutions.
 
-## Available Scripts
+<div style="text-align: center;">
+  <img src="readme-assets/gif/react.gif" alt="Repository GIF" width="300" height="300">
+</div>
 
-In the project directory, you can run:
+# Table of Contents
 
-### `npm start`
+- [Exercises 1, 2, and 3: PropTypes and useState](#exercises-1-2-and-3-proptypes-and-usestate)
+- [Exercises 4, 5, and 6: Converting Class Component to Functional Component](#exercises-4-5-and-6-converting-class-component-to-functional-component)
+- [Exercises 7, 8, and 9: Contact List in React JS](#exercises-7-8-and-9-contact-list-in-react-js)
+- [Upcoming Exercises (🚀)](#upcoming-exercises-)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Exercises 1, 2, and 3: PropTypes and useState
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Exercise Explanation and Requirements:**
 
-### `npm test`
+In this first React programming challenge, we will put into practice what we have learned so far by creating two components: Component A and Component B.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Component A
 
-### `npm run build`
+Component A represents a Contact and has the following features:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Name**: A string representing the contact's name.
+- **Last Name**: A string representing the contact's last name.
+- **Email**: A string representing the contact's email.
+- **Connected**: A boolean indicating whether the contact is connected or not.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Component B
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+On the other hand, we have Component B, which receives a contact as a prop and can toggle its connected state between connected and disconnected.
 
-### `npm run eject`
+- If the contact is connected, it should display: "Contact Online".
+- If the contact is disconnected, it should display: "Contact Unavailable".
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Rendering Components in the Solution
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Component A should be rendered inside the `App.js` component of the project.
+- Component B should be rendered from Component A and receive props correctly.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Remember to use PropTypes properly to validate the types of props received by the components.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Exercise Screenshot:
 
-## Learn More
+![Exercise 1 Solution](readme-assets/img/Exercise-1-2-3.png)
+_Code can be found in the repository, in its respective folder or branch or click here: [Solution](https://github.com/SJAR03/ejercicios-react/tree/main/src/Exercise-1-2-3)._
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Exercises 4, 5, and 6: Converting Class Component to Functional Component
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Exercise Explanation and Requirements:**
 
-### Code Splitting
+Given the following class component that includes several lifecycle methods, we need to convert it into a functional component that performs the same functionality.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```jsx
+import React, { Component } from 'react';
+import '../../styles/clock.scss';
 
-### Analyzing the Bundle Size
+class Clock extends Component {
+  constructor(props) {
+    super(props);
+    // Component's private state
+    this.state = {
+      // Generate initial date as component's state
+      date: new Date(),
+      age: 0,
+      name: 'Martin',
+      lastName: 'San Jose',
+    };
+  }
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  componentDidMount() {
+    this.timerID = setInterval(() => this.tick(), 1000);
+  }
 
-### Making a Progressive Web App
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  render() {
+    return (
+      <div>
+        <h2>Current Time: {this.state.date.toLocaleTimeString()}</h2>
+        <h3>
+          {this.state.name} {this.state.lastName}
+        </h3>
+        <h1>Age: {this.state.age}</h1>
+      </div>
+    );
+  }
 
-### Advanced Configuration
+  tick() {
+    this.setState((prevState) => {
+      let age = prevState.age + 1;
+      return {
+        ...prevState,
+        date: new Date(),
+        age,
+      };
+    });
+  }
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+export default Clock;
+```
 
-### Deployment
+### Exercise Screenshot:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Exercise 2 Solution](readme-assets/img/Exercise-4-5-6.png)
 
-### `npm run build` fails to minify
+_The code can be found in the repository, in its respective folder or branch or click here: [Solution](https://github.com/SJAR03/ejercicios-react/tree/main/src/Exercise-4-5-6).._
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Exercises 7, 8, and 9: Contact List in React JS
+
+**Exercise Description and Requirements:**
+
+In this React JS exercise, you are asked to create a contact list with the following functionalities:
+
+##### Display Contact
+
+The list should display existing contacts, including their information such as name, last name, email, and connection status.
+
+##### Create Contact
+
+You should implement the functionality to add new contacts to the list. Each contact should have a name, last name, email, and initial connection status.
+
+##### Delete Contact
+
+There should be an option to delete existing contacts from the list. When a contact is deleted, it should disappear from the view.
+
+##### Change Contact Status
+
+Each contact should have a connection status that can be changed between "Connected" and "Disconnected". There should be a way to change this status for each contact individually.
+
+### Exercise Screenshot:
+
+![Exercise 3 Solution](readme-assets/img/Exercise-7-8-9.png)
+
+_The code can be found in the repository, in its respective folder or branch or click here: [Solution](https://github.com/SJAR03/ejercicios-react/tree/main/src/Exercise-7-8-9).._
+
+## Upcoming Exercises (🚀)
+
+The fun doesn't end here! There are still many more exercises on the way that I hope to solve as I continue progressing in the course.
+
+🚧 Work in progress 🚧
