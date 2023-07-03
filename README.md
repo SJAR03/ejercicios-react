@@ -58,6 +58,6 @@ export default Clock;
 
 ### Exercise Screenshot:
 
-![Exercise 2 Solution](readme-assets/img/Exercise-4-5-6.png)
+![Exercise 2 Solution](readme-assets/Exercise-4-5-6.png)
 
 _The code can be found in the repository, in its respective folder or branch_
