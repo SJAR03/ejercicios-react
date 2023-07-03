@@ -52,7 +52,7 @@ body {
    color: #000000;
    margin-bottom: 0.625rem;
    text-transform: capitalize;
-   font-size: 0.875rem;
+   font-size: 20px;
    font-weight: 500;
 }
 
@@ -87,7 +87,7 @@ p {
    border-top: 0;
    border-bottom-width: 1px;
    font-weight: 500;
-   font-size: .875rem;
+   font-size: 20px;
    text-transform: uppercase;
 }
 
@@ -106,4 +106,9 @@ p {
 
 .task-actions {
     cursor: pointer;
+    font-size: 18px;
+}
+
+span{
+    font-size: 20px;
 }

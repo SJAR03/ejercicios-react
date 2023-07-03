@@ -7,15 +7,23 @@ const ContactComponent = ({ contact, status, deleted }) => {
   function contactStatus() {
     if (contact.status) {
       return (
-        <h6 className='mb-0'>
-          <span className='badge bg-primary'>Conectado</span>
-        </h6>
+        <h5 className='mb-0'>
+          <span
+            className='badge bg-primary task-actions'
+            style={{ borderRadius: 20, fontSize: 20 }}>
+            Connected
+          </span>
+        </h5>
       );
     } else {
       return (
-        <h6 className='mb-0'>
-          <span className='badge bg-danger'>Desconectado</span>
-        </h6>
+        <h5 className='mb-0'>
+          <span
+            className='badge bg-danger'
+            style={{ borderRadius: 20, fontSize: 20 }}>
+            Disconnected
+          </span>
+        </h5>
       );
     }
   }

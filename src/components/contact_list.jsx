@@ -2,18 +2,19 @@ import React, { useState } from 'react';
 import ContactComponent from './contact';
 import { Contact } from '../models/contact.class';
 import '../styles/contact_list.css';
+import ContactForm from './contact_form';
 
 const Contact_list = () => {
   const defaultContact1 = new Contact(
-    'Nombre 1',
-    'Apellido 1',
+    'Name 1',
+    'Last names 1',
     'Email 1',
     false
   );
 
   const defaultContact2 = new Contact(
-    'Nombre 2',
-    'Apellido 2',
+    'Name 2',
+    'Last names 2',
     'Email 2',
     true
   );
@@ -30,6 +31,17 @@ const Contact_list = () => {
 
   function deleteContact(contact) {
     console.log('Delete this contact:', contact);
+    const index = contacts.indexOf(contact);
+    const tempContact = [...contacts];
+    tempContact.splice(index, 1);
+    setContacts(tempContact);
+  }
+
+  function addContact(contact) {
+    console.log('Added contact', contact);
+    const tempContact = [...contacts];
+    tempContact.push(contact);
+    setContacts(tempContact);
   }
 
   return (
@@ -66,6 +78,7 @@ const Contact_list = () => {
                 </div>
               </div>
             </div>
+            <ContactForm add={addContact}></ContactForm>
           </div>
         </div>
       </div>
