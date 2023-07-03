@@ -1,0 +1,41 @@
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form-outline {
+    position: relative;
+  }
+  
+  .form-label {
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    background-color: #fff;
+    padding: 0 5px;
+    font-size: 15px;
+    color: #888;
+    transition: top 0.3s ease, font-size 0.3s ease;
+  }
+  
+  .form-control {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  
+  .form-control:focus + .form-label,
+  .form-control:valid + .form-label {
+    top: -12px;
+    font-size: 15px;
+  }
+  
+  .btn-block {
+    margin-top: 20px;
+    font-size: 20px;
+  }
