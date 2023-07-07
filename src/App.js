@@ -15,6 +15,11 @@ import Clock from './Exercise-4-5-6/components/Clock';
  */
 import ContactList from './Exercise-7-8-9/components/contact_list';
 
+/**
+ * Component for exercise 10-11-12
+ */
+import ChangeColor from './Exercise-10-11-12/components/changeColor';
+
 function App() {
   return (
     <div className='App'>
@@ -26,6 +31,9 @@ function App() {
 
       {/* Uncomment to run the component for exercise 7-8-9 */}
       {/* <ContactList></ContactList> */}
+
+      {/* Uncomment to run the component for exercise 10-11-12 */}
+      {/* <ChangeColor></ChangeColor> */}
     </div>
   );
 }
