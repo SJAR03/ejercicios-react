@@ -20,6 +20,11 @@ import ContactList from './Exercise-7-8-9/components/contact_list';
  */
 import ChangeColor from './Exercise-10-11-12/components/changeColor';
 
+/**
+ * Component for exercise 13-14-15
+ */
+import TaskList from './Exercise-13-14-15/components/task_list';
+
 function App() {
   return (
     <div className='App'>
@@ -34,6 +39,9 @@ function App() {
 
       {/* Uncomment to run the component for exercise 10-11-12 */}
       {/* <ChangeColor></ChangeColor> */}
+
+      {/* Uncomment to run the component for exercise 13-14-15 */}
+      <TaskList></TaskList>
     </div>
   );
 }
