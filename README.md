@@ -11,6 +11,8 @@ In this repository, I upload the solutions to the exercises proposed by the Open
 - [Exercises 1, 2, and 3: PropTypes and useState](#exercises-1-2-and-3-proptypes-and-usestate)
 - [Exercises 4, 5, and 6: Converting Class Component to Functional Component](#exercises-4-5-and-6-converting-class-component-to-functional-component)
 - [Exercises 7, 8, and 9: Contact List in React JS](#exercises-7-8-and-9-contact-list-in-react-js)
+- [Exercises 10, 11, and 12: Changing Color on Mouse Events](#exercises-10-11-and-12-changing-color-on-mouse-events)
+- [Exercises 13, 14, and 15: Task List and Form using Formik and Yup libraries](#exercises-13-14-and-15-task-list-and-form-using-formik-and-yup-libraries)
 - [Upcoming Exercises (🚀)](#upcoming-exercises-)
 
 ## Exercises 1, 2, and 3: PropTypes and useState
@@ -160,7 +162,7 @@ The dimensions of the element should be 255px width and 255px height, and its in
 
 _The code can be found in the repository, in its respective folder or branch or click here: [Solution](https://github.com/SJAR03/ejercicios-react/tree/main/src/Exercise-10-11-12).._
 
-## Exercises 13, 14, and 15: Task List and Form using Formik and Yup libraries.
+## Exercises 13, 14, and 15: Task List and Form using Formik and Yup libraries
 
 **Exercise Description and Requirements:**
 
