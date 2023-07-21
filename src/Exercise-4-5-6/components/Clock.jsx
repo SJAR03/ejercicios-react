@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/Clock.scss';
+import '../styles/Clock.css';
 
 const Clock = () => {
   const defaultData = {
